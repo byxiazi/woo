@@ -1,0 +1,22 @@
+{
+  "name": "@woo/g-render",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "xiaohua <minerxh@163.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

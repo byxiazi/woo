@@ -1,0 +1,26 @@
+const commander = require('commander')
+const pkg = require('../package.json')
+
+const docs = require('../lib/index')
+const envConf = require('../conf/env')
+
+commander
+  .version(pkg.version)
+
+commander
+  .command('dev <directory>')
+  .description('start the dev service from the specified directory')
+  .action(function(dir){
+    docs(dir, envConf.dev)
+  })
+
+commander
+  .command('build <directory>')
+  .description('build ouput for the production')
+  .action(function(dir){
+    docs(dir, envConf.prod)
+  })
+
+commander
+  .usage('woo~ [commands]')
+  .parse(process.argv)

@@ -1,0 +1,33 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "commit": "git-cz",
+    "precommit": "lint-staged",
+    "release": "standard-version"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "babel-eslint": "^10.0.3",
+    "chalk": "^3.0.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.7.1",
+    "eslint-plugin-react": "^7.17.0",
+    "lerna": "^3.18.3",
+    "standard-version": "^7.0.1"
+  },
+  "dependencies": {}
+}
