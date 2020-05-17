@@ -2,5 +2,9 @@
   "packages": [
     "packages/*"
   ],
+  "npmClient": "yarn",
+  "npmClientArgs": [
+    "--pure-lockfile"
+  ],
   "version": "independent"
 }
